@@ -1,0 +1,1 @@
+from Club_Fans_RO import app
