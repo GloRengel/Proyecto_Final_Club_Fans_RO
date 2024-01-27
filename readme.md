@@ -23,10 +23,10 @@ la libreria utilizada en flask https://flask-wtf.readthedocs.io/en/1.2.x/
 ```flask --app main --debug run```
 
 # Otra opción de ejecución 
-  -crear un archivo .env y dentro agregar los siguiente:
+Crear un archivo .env y dentro agregar los siguiente:
   ``` FLASK_APP=main.py ```
   ``` FLASK_DEBUG=True ```
-  -y luego poder ejecutar en la terminal el comando:
+y luego poder ejecutar en la terminal el comando:
   ``` flask run ```
 
 # Renombrar el archivo config_template a .config y agregar la siguiente linea
