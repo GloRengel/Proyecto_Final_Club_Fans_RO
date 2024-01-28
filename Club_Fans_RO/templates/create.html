@@ -1,0 +1,17 @@
+{% extends "index.html" %}
+
+{% block contenido %}
+
+<h1>Inscripción al club de fans</h1>
+<form action="/new" method="post">
+    <label for="nombre">Nombre:</label><br>
+    <input type="text" id="nombre" name="nombre"><br>
+    <label for="apellido">Apellidos:</label><br>
+    <input type="text" id="Apellidos" name="apellidos">
+    <label for="email">E-mail:</label><br>
+    <input type="text" id="email" name="email">
+    <label for="telefono">Teléfono:</label><br>
+    <input type="number" id="telefono" name="telefono">
+</form>
+
+{% endblock %}
