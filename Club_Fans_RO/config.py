@@ -1,1 +1,0 @@
-ORIGIN_DATA="data/Registro_Club_Fans_RO.sql"

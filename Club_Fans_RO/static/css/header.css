@@ -1,13 +1,6 @@
-.carrusel-img {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 80px 0 80px 10px;
-    box-sizing: border-box;
-}
-
 .carrusel-item {
-    flex: 0 0 100%;
-    width: 100%;
-    object-fit: cover;
-}
+    position: relative;
+    justify-content: center;
+    padding: 80px 0 80px;
 
+}

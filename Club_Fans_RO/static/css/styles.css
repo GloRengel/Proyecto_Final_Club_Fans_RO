@@ -1,2 +1,32 @@
 * {
+    font-family: 'Karla' ,Arial, Helvetica, sans-serif;
+    text-decoration: none;
 }
+
+body {
+    background-color: #A9CCE3 ;
+    
+}
+
+.header { 
+    /* Esto nos sirve para centrar la imagen del header */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.titulo {
+    font-size: 2rem;
+}
+
+.biografia {
+    padding: 0 300px 300px 300px;
+    font-size: 1.5rem;
+}
+
+.img_biografia {
+    float: left;
+    padding: 0 30px;
+}
+

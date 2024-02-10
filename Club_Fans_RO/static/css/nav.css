@@ -1,13 +1,15 @@
 .nav {
+    display: block;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    background-color: var(--dark-color);
+    background-color: var(--fondo);
     font-size: 1.3rem;
     font-family: 'Patrick Hand SC', Arial, Helvetica, sans-serif;
     color: var(--prymary-color);
     z-index: 99;
+    
 }
 
 .nav-list {
@@ -31,6 +33,7 @@
     text-decoration: none;
     padding: 1rem;
     list-style: none;
+    color: var(--prymary-color);
 }
 
 .nav-item a:hover {

@@ -1,9 +1,9 @@
 from flask import Flask
-from flask_cors import CORS
 
-app = Flask(__name__, instance_relative_config=True)
-app.config.from_object('config')
+app = Flask(__name__,instance_relative_config=True)
 
-CORS(app)
+app.config.from_object("config")
+
+ORIGIN_DATA = "data/Registro_Club_Fans_RO.sqlite"
 
 from Club_Fans_RO.routes import *

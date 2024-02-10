@@ -1,0 +1,12 @@
+.seccion-entradas {
+    padding: 200px 200px 200px 200px;
+}
+
+.seccion-item a{
+    
+}
+
+.botonentradas {
+    border: 1px solid var(--dark-color);
+    padding: 1rem;
+}

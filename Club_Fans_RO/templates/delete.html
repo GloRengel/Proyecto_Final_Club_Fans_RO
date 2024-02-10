@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block contenido %}
+<h1>Esto es una previsualizacion de borrar</h1>
+<article>
+    <p><strong>Nombre:</strong> {{data[1]}}</p>
+    <p><strong>Apellidos:</strong> {{data[2]}} </p>
+    <p><strong>Mail:</strong> {{data[3]}}</p>
+    <p><strong>Teléfono:</strong> {{data[4]}}</p>
+
+</article>
+
+
+<form method="POST" action="/delete/{{data[0]}}">
+    <button type="submit" class="boton-rojo">Borrar</button>
+</form>  
+
+
+{% endblock %}

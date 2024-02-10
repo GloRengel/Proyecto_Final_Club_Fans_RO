@@ -1,0 +1,32 @@
+table, th, td {
+    border: 1px solid var(--dark-color);
+    font-size: 1.25rem;
+}
+
+th {
+    padding: 5px;
+}
+
+td {
+    padding: 5px;
+}
+
+.boton {
+    
+    
+}
+
+.text {
+    font-size: 1.2rem;
+    color: black;
+}
+
+.boton1 {
+    color: black;
+    border: 1px solid var(--tercer-color);
+    padding: 2px;
+}
+
+.boton2 {
+    padding: 8px;
+}

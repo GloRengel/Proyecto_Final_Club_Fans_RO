@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Club de Fans RO</title>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./static/css/styles.css">
+    <link rel="stylesheet" href="./static/css/header.css">
+    <link rel="stylesheet" href="./static/css/nav.css">
+    <link rel="stylesheet" href="./static/css/variables.css">
+    <link rel="stylesheet" href="./static/css/suscripcion.css">
+</head>
+
+<body>
+
+    <nav class="nav">
+        <div>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="/">Inicio</a></li>
+                <li class="nav-item"><a href="/Biografia">Biografía</a></li>
+                <li class="nav-item"><a href="/Conciertos">Conciertos</a></li>
+                <li class="nav-item"><a href="/Clubdefans">Club de Fans</a></li>
+                <li class="nav-item"><a href="/Suscripcion">Subcripción</a></li>
+                <li class="nav-item"><a href="/Contacto">Contacto</a></li>
+            </ul>
+            
+        </div>
+    </nav>
+
+    <header class="header">
+        <div class="carrusel-container">
+            <img class="carrusel-item" src="./static/img/header.png" alt="Header">
+        </div>
+    </header>
+
+    <section class="general">
+        {% block contenido %}
+
+        {% endblock %}
+    </section>
+
+    <footer class="footer">
+        
+            <aside class="enlaces">
+                <p>Redes Sociales</p>
+                <ul class="lista-rrss">
+                    <li><a href="https://open.spotify.com/search/rocio%20ojuelos"><img src="./static/img/RRSS/spotify.png" alt="Spotify"></a></li>
+                    <li><a href="https://www.youtube.com/c/rocioojuelos"><img src="./static/img/RRSS/31B2Nyzd8XL.png" alt="Youtube"></a></li>
+                    <li><a href="https://www.instagram.com/rocio_ojuelos_oficial/?hl=es"><img src="./static/img/RRSS/instagram.png" alt="Instagram"></a></li>
+                    <li><a href="https://www.facebook.com/RocioOjuelosOficial/?locale=es_ES"><img src="./static/img/RRSS/facebook.png" alt="Facebook"></a></li>
+                    <li><a href="https://twitter.com/rocio_ojuelos?lang=es"><img src="./static/img/RRSS/X.png" alt="X"></a></li>
+                    <li><a href="https://www.tiktok.com/@rocio_ojuelos_oficial?lang=es"><img src="./static/img/RRSS/tiktok.png" alt="TikTok"></a></li>
+                </ul>
+            </aside>
+        </div>
+        <div class="general">
+            &copy; 2024-GRL
+        </div>
+    </footer>
+</body>
+</html>

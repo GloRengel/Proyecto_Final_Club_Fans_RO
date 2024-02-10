@@ -1,72 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro Club de Fans RO</title>
-    <link href="https: //fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/Club_Fans_RO/static/css/styles.css">
-    <link rel="stylesheet" href="/Club_Fans_RO/static/css/header.css">
-    <link rel="stylesheet" href="/Club_Fans_RO/static/css/nav.css">
-    <link rel="stylesheet" href="/Club_Fans_RO/static/css/variables.css">
-</head>
+{% extends "base.html" %}
 
-<body>
+{% block contenido %}
 
-    <nav class="nav">
-        <div>
-            <ul class="nav-list">
-                <li class="nav-item"><a href="#Inicio">Inicio</a></li>
-                <li class="nav-item"><a href="#Biografía">Biografía</a></li>
-                <li class="nav-item"><a href="#Conciertos">Conciertos</a></li>
-                <li class="nav-item"><a href="#Galería">Galería</a></li>
-                <li class="nav-item"><a href="#Suscripcion">Subcripción</a></li>
-            </ul>
-            
-        </div>
-    </nav>
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <ul class=flashes>
+    {% for message in messages %}
+      <li>{{ message }}</li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endwith %}
 
-    <header class="header">
-        <div class="carrusel-img">
-            <!-- Aquí va el carrusel de fotos para el principio-->
-        </div>
-    </header>
+<h1 class="titulo" align="center">Listado del registro del Club de Fans</h1>
+<table class="tabla" align="center">
+    <thead>
+    <tr>
+        <th>Núm. Socio</th>
+        <th>Nombre</th>
+        <th>Apellidos</th>
+        <th>E-mail</th>
+        <th>Teléfono</th>
+        <th>Funciones</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for item in data %}
+    <tr>
+        <td>{{item.id}}</td>
+        <td>{{item.Nombre}}</td>
+        <td>{{item.Apellidos}}</td>
+        <td>{{item.Mail}}</td>
+        <td>{{item.Telefono}}</td>
+        <td>
+          <a href="/update/{{item.id}}">
+            <span class="boton1">Editar</span>
+          </a>
+          <a href="/delete/{{item.id}}">
+            <span class="boton1">Borrar</span>
+          </a>
+        </td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+<br>
+<div class="boton" align="center">
+  <button class="boton2">
+      <a href="/new" class="text">Nuevo Registro</a> <br>
+  </button>
+</div>
+<br>
+<br>
 
-    <section class="general">
-
-        <!-- <div id="Biografia">
-            <h1>Biografía</h1>
-            <p>
-                Biografía de la artista
-            </p>
-        </div>
-
-        <div id="Conciertos">
-            <h1>Conciertos</h1>
-            <p>
-                Sus proximos conciertos
-            </p>    
-        </div>
-
-        <div id="Galeria">
-            <h1>Galería de Fotos</h1>
-            <p>
-                Galería de fotos de los conciertos
-            </p>
-        </div> -->
-
-    
-    {% block contenido %}
-
-    {% endblock %}
-        <!-- Formulario para inscribirse en el club de fans -->
-
-    </section>
-
-    <footer>
-        <div class="general">
-            &copy; 2024-GRL
-        </div>
-    </footer>
-</body>
-</html>
+{% endblock %}

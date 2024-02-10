@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block contenido %}
+<h1>Esto es una previsualizacion de editar</h1>
+
+<form action="/update/{{idForm}}" method="post">
+    {{dataForm.csrf_token}}
+
+    {{dataForm.nombre.label}}
+    {{dataForm.nombre}}
+    {% if dataForm.nombre.errors %}
+        <ul class="errors">
+        {% for error in dataForm.nombre.errors %}
+            <li>{{ error }}</li>
+        {% endfor %}
+        </ul>
+    {% endif %}<br>
+
+    {{dataForm.apellidos.label}}
+    {{dataForm.apellidos}}
+    {% if dataForm.apellidos.errors %}
+        <ul class="errors">
+        {% for error in dataForm.apellidos.errors %}
+            <li>{{ error }}</li>
+        {% endfor %}
+        </ul>
+    {% endif %}<br>
+
+    {{dataForm.mail.label}}
+    {{dataForm.mail}}
+    {% if dataForm.mail.errors %}
+        <ul class="errors">
+        {% for error in dataForm.mail.errors %}
+            <li>{{ error }}</li>
+        {% endfor %}
+        </ul>
+    {% endif %}<br>
+
+    {{dataForm.telefono.label}}
+    {{dataForm.telefono}}
+    {% if dataForm.telefono.errors %}
+        <ul class="errors">
+        {% for error in dataForm.telefono.errors %}
+            <li>{{ error }}</li>
+        {% endfor %}
+        </ul>
+    {% endif %}<br><br>
+
+    {{dataForm.submit}}
+  
+  </form>  
+
+
+{% endblock %}
