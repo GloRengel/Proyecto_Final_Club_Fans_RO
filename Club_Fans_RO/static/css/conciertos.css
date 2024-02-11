@@ -1,12 +1,31 @@
 .seccion-entradas {
-    padding: 200px 200px 200px 200px;
+    padding: 0 0 100px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+}
+
+.seccion-item {
+    padding: 20px;
+    width: 380px;
+    height: 200px;
 }
 
 .seccion-item a{
-    
+   padding: 0 100px;
 }
 
 .botonentradas {
     border: 1px solid var(--dark-color);
     padding: 1rem;
+}
+
+h1 {
+    padding: 0 300px;
+    text-shadow: white 1px 1px;
+}
+
+
+p, a {
+    font-size: 1.5rem;
 }

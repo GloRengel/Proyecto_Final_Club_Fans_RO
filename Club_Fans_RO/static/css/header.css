@@ -1,6 +1,5 @@
 .carrusel-item {
-    position: relative;
-    justify-content: center;
-    padding: 80px 0 80px;
-
+    padding: 80px;
+    width: 1500px;
+    height: 300px;
 }

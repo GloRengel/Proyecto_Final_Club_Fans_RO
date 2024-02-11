@@ -29,9 +29,9 @@ Crear un archivo .env y dentro agregar los siguiente:
 y luego poder ejecutar en la terminal el comando:
   ``` flask run ```
 
-# Renombrar el archivo config_template a .config y agregar la siguiente linea
-  ```ORIGIN_DATA="data/basededatos.sqlite"```
-  ```VERSION="v1.0"```
+# Renombrar el archivo config_template a .config y agregar tu código de consulta de APIKEY
+  ```SECRET_KEY = "ponga aqui su apikey"```
 
 # Base de datos
 Crear tabla para registro de personas con la sentencia del archivo create.sql en DB Browser (SQLite)
+También está el archivo del registro vacío

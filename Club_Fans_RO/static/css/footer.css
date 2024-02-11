@@ -1,10 +1,10 @@
 .footer {
-    display: flex;
-    flex-direction: column-reverse;
-    background-color: var(--bg-footer);
-    position: sticky;
+    display: block;
+    grid-template-columns: repeat(2, 1fr);
     bottom: 0;
-    
+    padding: 0;
+    margin: 0;
+    background-color: var(--dark-color);
 
 }
 
@@ -19,16 +19,28 @@
 
 .lista-rrss img {
     list-style: none;
-    padding: 0;
+    padding: 0 10px;
     display: flex;
-    justify-content: space-evenly;
-    margin: 0.25rem 0;
+    justify-content: center;
     width: 32px; 
     height: 32px;
     object-fit: cover;
     filter: grayscale(100%);
 }
 
-.contacto {
-    list-style: none;
-}
+.lista-rrss {
+    text-decoration: none;
+    color: #374457;
+    font-size: 18px;
+    font-weight: bold;
+    display:flex;
+    align-items:center;
+  }
+  
+  
+.enlaces {
+    margin: 20px;
+    display: flex;
+    flex-direction:column;
+  
+  }

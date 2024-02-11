@@ -19,7 +19,7 @@ def validarFormulario(datosFormulario):
 
 @app.route("/")
 def index():
-    return render_template("base.html")
+    return render_template("inicio.html")
 
 
 @app.route("/Biografia")
@@ -67,7 +67,7 @@ def create():
             return render_template("create.html", dataForm=valido)
 
 
-@app.route("/update/<int:id>", methods=["GET","POST"])
+@app.route("//update/<int:id>", methods=["GET","POST"])
 def editar(id):
     if request.method == "GET":
         valido = ValidatorForm()

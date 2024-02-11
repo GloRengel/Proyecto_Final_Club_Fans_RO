@@ -1,0 +1,20 @@
+img {
+    float: right;
+    padding: 0 30px;
+}
+
+.img-p {
+    width: 775;
+    height: 350;
+    padding: 0 200px 200px 200px;
+}
+
+.p1 {
+    padding: 0 300px 20px 300px;
+    font-size: 1.5rem;
+    text-shadow: white 1px 1px;
+}
+
+h1 {
+    padding: 100px 0 0 0 ;
+}
